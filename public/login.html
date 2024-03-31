@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login-Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.20/sweetalert2.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.20/sweetalert2.js"></script>
+
+</head>
+<body>
+
+
+   <div id="container" class="container">
+		<!-- FORM SECTION -->
+		<div class="row">
+			<!-- SIGN UP -->
+			<div class="col align-items-center flex-col sign-up">
+				<div class="form-wrapper align-items-center">
+					<div class="form sign-up">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" placeholder="Username" id="username1">
+                     <div id="user1_error"></div>
+
+						</div>
+						<div class="input-group">
+							<i class='bx bx-mail-send'></i>
+							<input type="email" placeholder="Email" id="email1">
+                     <div id="email_error"></div>
+
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Password" id="pass1">
+                     <div id="pass1_error"></div>
+
+						</div>
+					
+						<button onclick="validregis()">
+							Sign up
+						</button>
+						<p>
+							<span>
+								Already have an account?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Sign in here
+							</b>
+						</p>
+					</div>
+				</div>
+			
+			</div>
+			<!-- END SIGN UP -->
+			<!-- SIGN IN -->
+			<div class="col align-items-center flex-col sign-in">
+				<div class="form-wrapper ">
+					<div class="form sign-in">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" placeholder="Username" id="username">
+                     <div id="user_error"></div>
+
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Password" id="password">
+                     <div id="pass_error"></div>
+
+						</div>
+						<button onclick=" return validation()">
+							Sign in
+						</button>
+						<p>
+							<span>
+								Don't have an account?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Sign up here
+							</b>
+						</p>
+					</div>
+				</div>
+				<div class="form-wrapper">
+		
+				</div>
+			</div>
+			<!-- END SIGN IN -->
+		</div>
+		<!-- END FORM SECTION -->
+		<!-- CONTENT SECTION -->
+		<div class="row content-row">
+			<!-- SIGN IN CONTENT -->
+			<div class="col align-items-center flex-col">
+				<div class="text sign-in">
+					<h2>
+						Welcome
+					</h2>
+	
+				</div>
+				<div class="img sign-in">
+		
+				</div>
+			</div>
+			<!-- END SIGN IN CONTENT -->
+			<!-- SIGN UP CONTENT -->
+			<div class="col align-items-center flex-col">
+				<div class="img sign-up">
+				
+				</div>
+				<div class="text sign-up">
+					<h2>
+						Join with us
+					</h2>
+	
+				</div>
+			</div>
+			<!-- END SIGN UP CONTENT -->
+		</div>
+		<!-- END CONTENT SECTION -->
+	</div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+   <script src="js/script.js"></script>
+
+</body>
+</html>
